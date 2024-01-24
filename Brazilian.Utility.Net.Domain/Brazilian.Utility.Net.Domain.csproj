@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Company\Queries\GetAllCompanies\GetAllCompaniesValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Team\" />
+    <None Remove="Team\Commands\" />
+    <None Remove="Team\Queries\" />
+    <None Remove="Utility\Repositories\" />
+    <None Remove="Utility\Integration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utility\Repositories\" />
+    <Folder Include="Utility\Integration\" />
+  </ItemGroup>
+</Project>
