@@ -1,4 +1,4 @@
-﻿namespace Brazilian.Utility.Net.Domain.Utility.Entities
+﻿namespace Brazilian.Utility.Net.Domain.Vehycle.Entities
 {
     public record Ipva(float Aliquot,
                         float PurchasableValue,

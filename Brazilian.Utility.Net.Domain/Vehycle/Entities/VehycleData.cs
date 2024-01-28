@@ -1,6 +1,6 @@
-﻿namespace Brazilian.Utility.Net.Domain.Utility.Entities
+﻿namespace Brazilian.Utility.Net.Domain.Vehycle.Entities
 {
-	public record Vehycle(string Brand,
+	public record VehycleData(string Brand,
                          string Model,
                          int Year,
                          string Color,

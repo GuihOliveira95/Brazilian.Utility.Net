@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Vehycle\Repositories\**" />
+    <EmbeddedResource Remove="Vehycle\Repositories\**" />
+    <None Remove="Vehycle\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Company\Queries\GetAllCompanies\GetAllCompaniesValidator.cs" />
   </ItemGroup>
 
@@ -19,11 +25,7 @@
     <None Remove="Team\" />
     <None Remove="Team\Commands\" />
     <None Remove="Team\Queries\" />
-    <None Remove="Utility\Repositories\" />
-    <None Remove="Utility\Integration\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utility\Repositories\" />
-    <Folder Include="Utility\Integration\" />
+    <None Remove="Vehycle\Repositories\" />
+    <None Remove="Vehycle\Integration\" />
   </ItemGroup>
 </Project>

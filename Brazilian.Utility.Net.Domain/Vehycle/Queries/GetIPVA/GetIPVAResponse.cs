@@ -1,6 +1,6 @@
-﻿using Brazilian.Utility.Net.Domain.Utility.Entities;
+﻿using Brazilian.Utility.Net.Domain.Vehycle.Entities;
 
-namespace Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA
+namespace Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA
 {
     public class GetIPVAResponse
     {

@@ -1,7 +1,7 @@
-﻿using Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA;
+﻿using Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Brazilian.Utility.Net.Api.Queries.Utility
+namespace Brazilian.Utility.Net.Api.Queries.Vehycle
 {
     [BindProperties(SupportsGet = true)]
     public class GetIPVAQuery

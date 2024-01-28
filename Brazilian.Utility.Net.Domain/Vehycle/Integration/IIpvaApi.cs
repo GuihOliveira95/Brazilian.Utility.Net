@@ -1,8 +1,8 @@
 ﻿
 using System.Threading.Tasks;
-using Brazilian.Utility.Net.Domain.Utility.Entities;
+using Brazilian.Utility.Net.Domain.Vehycle.Entities;
 
-namespace Brazilian.Utility.Net.Domain.Utility.Integration
+namespace Brazilian.Utility.Net.Domain.Vehycle.Integration
 {
 	public interface IIpvaApi
 	{

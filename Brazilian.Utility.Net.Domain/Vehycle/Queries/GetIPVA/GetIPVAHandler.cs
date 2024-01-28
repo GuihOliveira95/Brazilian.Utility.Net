@@ -1,26 +1,26 @@
 ﻿
 
-using Brazilian.Utility.Net.Domain.Utility.Services.Interface;
+using Brazilian.Utility.Net.Domain.Vehycle.Services.Interface;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA
+namespace Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA
 {
     public class GetIPVAHandler : IRequestHandler<GetIPVARequest, GetIPVAResponse>
     {
-        private readonly IUtilityService _utilityService;
+        private readonly IVehycleService _vehycleService;
 
-        public GetIPVAHandler(IUtilityService utilityService)
+        public GetIPVAHandler(IVehycleService vehycleService)
         {
-            _utilityService = utilityService;
+            _vehycleService = vehycleService;
         }
 
         public async Task<GetIPVAResponse> Handle(GetIPVARequest request, CancellationToken cancellationToken)
         {
           
-            var GetIPVA = await _utilityService.GetIPVAAsync(request.LicensePlate);
+            var GetIPVA = await _vehycleService.GetIPVAAsync(request.LicensePlate);
 
             return GetIPVA;
 

@@ -3,11 +3,11 @@ using Brazilian.Utility.Net.Domain.Common.Behaviors;
 using Brazilian.Utility.Net.Domain.Common.Configs;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using Brazilian.Utility.Net.Domain.Utility.Services.Interface;
-using Brazilian.Utility.Net.Domain.Utility.Services;
+using Brazilian.Utility.Net.Domain.Vehycle.Services.Interface;
+using Brazilian.Utility.Net.Domain.Vehycle.Services;
 using Brazilian.Utility.Net.Domain.Integration.IPVA;
-using Brazilian.Utility.Net.Domain.Utility.Integration;
-using Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA;
+using Brazilian.Utility.Net.Domain.Vehycle.Integration;
+using Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA;
 using Microsoft.Extensions.Configuration;
 
 namespace Brazilian.Utility.Net.Infra.CrossCutting.IoC.Modules
@@ -33,8 +33,8 @@ namespace Brazilian.Utility.Net.Infra.CrossCutting.IoC.Modules
 
         private static void AddServices(this IServiceCollection services)
         {
-            services.AddTransient<UtilityService>();
-            services.AddScoped<IUtilityService, UtilityService>();
+            services.AddTransient<VehycleService>();
+            services.AddScoped<IVehycleService, VehycleService>();
         }
 
         private static void AddAcls(this IServiceCollection services)

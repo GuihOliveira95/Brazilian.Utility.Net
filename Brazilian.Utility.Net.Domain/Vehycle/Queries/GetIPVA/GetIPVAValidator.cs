@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA
+namespace Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA
 {
     public class GetIPVAValidator : AbstractValidator<GetIPVARequest>
     {

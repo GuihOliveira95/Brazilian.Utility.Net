@@ -3,8 +3,8 @@ using Flurl.Http;
 using Brazilian.Utility.Net.Domain.Common.Configs;
 using Microsoft.Extensions.Options;
 using System.Net;
-using Brazilian.Utility.Net.Domain.Utility.Entities;
-using Brazilian.Utility.Net.Domain.Utility.Integration;
+using Brazilian.Utility.Net.Domain.Vehycle.Entities;
+using Brazilian.Utility.Net.Domain.Vehycle.Integration;
 using HtmlAgilityPack;
 
 namespace Brazilian.Utility.Net.Domain.Integration.IPVA
@@ -43,7 +43,7 @@ namespace Brazilian.Utility.Net.Domain.Integration.IPVA
 
         }
 
-        public Vehycle GetVehycleData(string html)
+        public VehycleData GetVehycleData(string html)
         {
             try
             {
@@ -75,12 +75,12 @@ namespace Brazilian.Utility.Net.Domain.Integration.IPVA
 
                 }
 
-                return new Vehycle(brand, model, year, color, cylinderCapability, fuel, city, state);
+                return new VehycleData(brand, model, year, color, cylinderCapability, fuel, city, state);
 
             }
             catch
             {
-                return new Vehycle(null, null, 0, null, null, null, null, null);
+                return new VehycleData(null, null, 0, null, null, null, null, null);
             }
         }
 

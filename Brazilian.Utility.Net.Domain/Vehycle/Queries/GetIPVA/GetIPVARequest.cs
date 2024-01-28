@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA
+namespace Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA
 {
     public class GetIPVARequest : IRequest<GetIPVAResponse>
     {

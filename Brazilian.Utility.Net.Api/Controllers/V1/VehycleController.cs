@@ -1,5 +1,5 @@
-﻿using Brazilian.Utility.Net.Api.Queries.Utility;
-using Brazilian.Utility.Net.Domain.Utility.Queries.GetIPVA;
+﻿using Brazilian.Utility.Net.Api.Queries.Vehycle;
+using Brazilian.Utility.Net.Domain.Vehycle.Queries.GetIPVA;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -12,11 +12,11 @@ namespace Brazilian.Utility.Net.Api.Controllers.V1
     [ApiVersion("1.0")]
     [Route("/v{version:apiVersion}/[controller]")]
     [ApiController]
-    public class UtilityController : ControllerBase
+    public class VehycleController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public UtilityController(IMediator mediator)
+        public VehycleController(IMediator mediator)
         {
             _mediator = mediator;
         }
